@@ -41,3 +41,40 @@ input{
     padding: 10px;
     font-size: 20px;
 }
+
+label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button {
+    width: 100%;
+    background-color: rgb(228, 240, 250);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    margin-bottom: 15px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: rgb(178, 205, 228);
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    color:#2C2C73;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table tbody td {
+    background: none;
+    padding: 10px;
+}

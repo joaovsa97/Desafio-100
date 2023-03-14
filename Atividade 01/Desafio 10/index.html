@@ -6,11 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 5</title>
     <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <input type="Nome" placeholder="Digite o nome do produto" />
-        <input type="number" placeholder="Digite o preço do produto" />
+    <div class="atv">
+        <label for="nome">Nome Produto</label>
+        <input id="nomeProd" type="Nome" name="nome"/>
+        
+        <label for="preco">Preço Produto</label>
+        <input id="precProd" name="preco" type="number"/>
+    
+        <button onclick="atividade10()">Executar</button>
+
+        <table >
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
