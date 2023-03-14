@@ -24,6 +24,9 @@ const atividade03 = () => {
     currentYear <= birthYear ? res.innerText = "Invalid Date" : res.innerText = "Your age: " + parseInt(currentYear - birthYear);
 }
 
-// const atividade04 = () => {
+const atividade04 = () => {
+    const productName = document.getElementById("name");
+    const productPrice = document.getElementById("price");
 
-// }
+    
+}
