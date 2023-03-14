@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+    <title>Desafio 3</title>
+</head>
+<body onload="setYear()">
+    <div class="atv">
+        <label for="birthYear">Current Year</label>
+        <input id="birthYear" type="date">
+        <label for="currentYear">Current Year</label>
+        <input id="currentYear" type="text" disabled>
+        <button onclick="atividade03()">submit</button>
+        <h3 id="res"></h3>
+    </div>
+
+
+    <script>
+        const setYear = () => {
+            const currentYear = document.getElementById("currentYear");
+
+            let getYear = new Date().getFullYear();
+
+            return currentYear.value = getYear;
+        }
+    </script>
+</body>
+</html>
