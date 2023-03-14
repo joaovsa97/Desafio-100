@@ -1,9 +1,13 @@
+// Declaração variaveis globais
+
+var objProd = []
+
 const atividade01 = () => {
     let msg = document.getElementById("welcome");
     let name = document.getElementById("name");
 
     // return msg.textContent = "Welcome "+ name.value;
-    msg.innerHTML = "Welcome "+ name.value;
+    msg.innerHTML = "Welcome " + name.value;
 }
 
 const atividade02 = () => {
@@ -27,3 +31,25 @@ const atividade03 = () => {
 // const atividade04 = () => {
 
 // }
+
+const atividade10 = () => {
+    var tableBody = document.getElementById("table")
+
+    objProd.push({ nome: document.getElementById('nomeProd').value, 
+        preco: document.getElementById('precProd').value })
+
+    tableBody.innerHTML = ""
+
+    for(var i = 0; i < objProd.length; i++) {
+        var row = tableBody.insertRow(-1)
+        var nome = row.insertCell(-1)
+
+        nome.appendChild(document.createTextNode(objProd[i].nome))
+
+        var preco = row.insertCell(-1)
+        preco.appendChild(document.createTextNode(objProd[i].preco))
+    }
+
+    document.getElementById('nomeProd').value = ''
+    document.getElementById('precProd').value = ''
+}
