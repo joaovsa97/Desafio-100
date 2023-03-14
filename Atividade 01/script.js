@@ -2,6 +2,9 @@
 
 var objProd = []
 
+
+//Declarando funções utilizadas nas atividades 
+
 const atividade01 = () => {
     let msg = document.getElementById("welcome");
     let name = document.getElementById("name");
@@ -80,6 +83,25 @@ const atividade07 = () => {
     year = objectDate.getFullYear();
 
     return res.innerText = year + "/" + month + "/" + day;
+}
+
+const atividade08 = () => {
+    const userAge = document.getElementById("age").value;
+    const res = document.getElementById("res");
+
+    userAge < 1 ? isLegalAge = "The value must be higher than 1"
+    :
+    isLegalAge = userAge < 18 ? "You're not on legal Age" : "You're on legal Age";
+
+    return res.innerText = isLegalAge;
+}
+
+const atividade09 = () => {
+    const num = document.getElementById("num").value;
+    const word = document.getElementById("word").value;
+    const res = document.getElementById("res");
+
+    return res.innerText = "''" + num + " " + word + "''";
 }
 
 const atividade10 = () => {
