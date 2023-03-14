@@ -108,7 +108,7 @@ const atividade10 = () => {
     var tableBody = document.getElementById("table")
 
     objProd.push({ nome: document.getElementById('nomeProd').value, 
-        preco: document.getElementById('precProd').value })
+        preco: parseFloat(document.getElementById('precProd').value).toFixed(2) })
 
     tableBody.innerHTML = ""
 
