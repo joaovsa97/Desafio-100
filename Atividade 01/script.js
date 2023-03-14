@@ -27,6 +27,53 @@ const atividade03 = () => {
 const atividade04 = () => {
     const productName = document.getElementById("name");
     const productPrice = document.getElementById("price");
+    const res = document.getElementById("resName");
 
+    let price = parseFloat(productPrice.value).toFixed(2);
     
+    return res.innerText = "Product Name: " + productName.value + "\n\nPrice: " + " U$ " + price;
+}
+
+const atividade05 = () => {
+    const res = document.getElementById("res");
+
+    const numbers = [1,2,3,4,5,6,7,8,9,0];
+    let resp = 0;
+
+    let holder = numbers.forEach(e => {
+        resp = e + resp;
+    });
+
+    return res.innerText = "Numbers on array: " + numbers + "\n\n Result of addition: " + resp;
+}
+
+const atividade06 = () => {
+    const inputName = document.getElementById("name");
+    const inputAge = document.getElementById("age");
+    const inputAddress = document.getElementById("address");
+    const res = document.getElementById("res");
+
+    user = {
+        name : inputName.value,
+        age : parseInt(inputAge.value),
+        address : inputAddress.value
+    }
+
+    return res.innerText = "Name: " + user.name + "\nAge: " + user.age + "\nAddress: " + user.address;
+}
+
+const atividade07 = () => {
+    const localDate = document.getElementById("localdate");
+    const res = document.getElementById("res");
+
+    let objectDate = new Date(localDate.value);
+
+    valueDay = objectDate.getDate() + 1;
+    valueMonth = objectDate.getMonth() + 1;
+
+    day = valueDay <= 9 ? "0" + valueDay : valueDay;
+    month = valueMonth < 10 ? "0" + valueMonth : valueMonth;
+    year = objectDate.getFullYear();
+
+    return res.innerText = year + "/" + month + "/" + day;
 }
