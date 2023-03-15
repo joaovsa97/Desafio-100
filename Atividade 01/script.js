@@ -9,8 +9,9 @@ const atividade01 = () => {
     let msg = document.getElementById("welcome");
     let name = document.getElementById("name");
 
-    // return msg.textContent = "Welcome "+ name.value;
-    msg.innerHTML = "Welcome " + name.value;
+    console.log(name.value)
+
+    return name.value != "" ? msg.innerText = "Welcome " + name.value : "Verify your input"
 }
 
 const atividade02 = () => {

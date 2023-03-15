@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+    <title>III - Desafio 10</title>
+</head>
+<body>
+    <div class="atv">
+        <span>Crie uma variável que armazene um objeto com informações de uma  pessoa (nome, idade, cidade, etc.). Teste se essa pessoa é maior de  idade e se mora em São Paulo. Exiba na tela uma mensagem  informando o resultado.</span>
+        <form onsubmit="return false;">
+            <label for="name">Type your name:</label>
+            <input id="name" type="text" required>
+            <label for="age">Type your age:</label>
+            <input id="age" type="number" required>
+            <label for="city">Type your living city:</label>
+            <input id="city" type="text" required>
+            <button onclick="atividade10()">Verify</button>
+        </form>
+        <h3 id="res"></h3>
+    </div>
+</body>
+</html>

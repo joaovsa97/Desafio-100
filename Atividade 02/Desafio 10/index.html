@@ -10,13 +10,16 @@
 </head>
 <body>
     <div class="atv">
-        <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Your Name">
-        <label for="age">Age:</label>
-        <input type="number" id="age" placeholder="Your Age">
-        <label for="height">Height:</label>
-        <input type="number" id="height" placeholder="Your Height">
-        <button onclick="atividade10()">Compare</button>
+        <span>Crie uma variável que armazene um objeto com informações de uma  pessoa (nome, idade, altura, etc.). Teste se a pessoa é maior de idade e  se sua altura é maior que 1,70m. Exiba na tela o resultado da  comparação.</span>
+        <form onsubmit="return false;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Your Age" required>
+            <label for="height">Height:</label>
+            <input type="number" id="height" placeholder="Your Height" required>
+            <button onclick="atividade10()">Compare</button>
+        </form>
         <h3 id="res"></h3>
     </div>
 </body>

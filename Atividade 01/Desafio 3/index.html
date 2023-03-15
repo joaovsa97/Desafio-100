@@ -10,11 +10,14 @@
 </head>
 <body onload="setYear()">
     <div class="atv">
-        <label for="birthYear">Current Year</label>
-        <input id="birthYear" type="date">
-        <label for="currentYear">Current Year</label>
-        <input id="currentYear" type="text" disabled>
-        <button onclick="atividade03()">submit</button>
+        <span>Crie uma variável para armazenar o ano atual e outra variável para  armazenar o ano de nascimento de uma pessoa. Calcule a idade dessa  pessoa e exiba na tela uma mensagem informando a idade.</span>
+        <form onsubmit="return false;">
+            <label for="birthYear">Current Year</label>
+            <input id="birthYear" type="date" required>
+            <label for="currentYear">Current Year</label>
+            <input id="currentYear" type="text" disabled>
+            <button onclick="atividade03()">submit</button>
+        </form>
         <h3 id="res"></h3>
     </div>
 

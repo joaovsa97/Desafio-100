@@ -10,11 +10,14 @@
 </head>
 <body>
     <div class="atv">
-        <label for="productName">Product Name:</label>
-        <input id="productName" type="text">
-        <label for="productQty">Product Quantity:</label>
-        <input id="productQty" type="number">
-        <button onclick="atividade02()">Verify</button>
+        <span>Crie uma variável que armazene uma string contendo o nome de um  produto e outra variável que armazene um número representando a  quantidade desse produto em estoque. Exiba na tela uma mensagem  informando o nome do produto e se ele está em falta ou não.</span>
+        <form onsubmit="return false;">
+            <label for="productName">Product Name:</label>
+            <input id="productName" type="text" required>
+            <label for="productQty">Product Quantity:</label>
+            <input id="productQty" type="number" required>
+            <button onclick="atividade02()">Verify</button>
+        </form>
         <h3 id="res"></h3>
     </div>
 </body>

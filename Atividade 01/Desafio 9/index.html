@@ -10,12 +10,14 @@
 </head>
 <body>
     <div class="atv">
-        <label for="num">Type a Number: </label>
-        <input type="number" id="num" placeholder="Type here">
-
-        <label for="word">Type a word: </label>
-        <input type="text" id="word" placeholder="Type here">
-        <button onclick="atividade09()">Submit</button>
+        <span>Crie uma variável que armazene um número e outra variável que  armazene um texto. Concatene os dois valores e exiba na tela o  resultado.</span>
+        <form onsubmit="return false;">
+            <label for="num">Type a Number: </label>
+            <input type="number" id="num" placeholder="Type here" required>
+            <label for="word">Type a word: </label>
+            <input type="text" id="word" placeholder="Type here" required>
+            <button onclick="atividade09()">Submit</button>
+        </form>
 
         <h3 id="res"></h3>
     </div>

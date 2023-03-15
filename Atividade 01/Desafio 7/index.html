@@ -10,9 +10,12 @@
 </head>
 <body>
     <div class="atv">
-        <label for="date">Input a date:</label>
-        <input type="date" id="localdate">
-        <button onclick="atividade07()">Submit</button>
+        <span>Crie uma variável que armazene uma string contendo uma data no  formato "dd/mm/aaaa". Converta essa string para o formato "aaaa-mm dd" e exiba na tela.</span>
+        <form onsubmit="return false;">
+            <label for="date">Input a date:</label>
+            <input type="date" id="localdate" required>
+            <button onclick="atividade07()">Submit</button>
+        </form>
 
         <h3 id="res"></h3>
     </div>

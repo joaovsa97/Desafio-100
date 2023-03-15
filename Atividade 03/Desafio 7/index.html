@@ -6,17 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <script src="../script.js"></script>
-    <title>I - Desafio 08</title>
+    <title>III - Desafio 7</title>
 </head>
 <body>
     <div class="atv">
-        <span>Crie uma variável que armazene um valor booleano representando se  uma pessoa é maior de idade ou não. Exiba na tela uma mensagem  informando se a pessoa é maior de idade ou não.</span>
+        <span>Crie uma variável que armazene um número inteiro representando o  mês do ano (1 para janeiro, 2 para fevereiro, etc.). Use a estrutura  switch para exibir na tela o nome do mês correspondente.</span>
         <form onsubmit="return false;">
-            <label for="age">Type your age: </label>
-            <input type="number" min="1" id="age" placeholder="your age" required>
-            <button onclick="atividade08()">Submit</button>
+            <label for="date">Type a month's number</label>
+            <input id="date" type="number" min="1" max="12" required>
+            <button onclick="atividade07()">Verify</button>
         </form>
-
         <h3 id="res"></h3>
     </div>
 </body>

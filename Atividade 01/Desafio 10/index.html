@@ -10,15 +10,18 @@
 </head>
 <body>
     <div class="atv">
-        <label for="nome">Nome Produto</label>
-        <input id="nomeProd" type="Nome" name="nome"/>
+        <span>Crie uma variável que armazene um array de objetos (cada objeto  representa um produto com nome e preço). Percorra o array e exiba na  tela o nome e o preço de cada produto.</span>
+        <form onsubmit="return false;">
+            <label for="nome">Nome Produto</label>
+            <input id="nomeProd" type="Nome" name="nome" required/>
+            
+            <label for="preco">Preço Produto</label>
+            <input id="precProd" name="preco" min="0" type="number" required/>
         
-        <label for="preco">Preço Produto</label>
-        <input id="precProd" name="preco" type="number"/>
-    
-        <button onclick="atividade10()">Executar</button>
+            <button onclick="atividade10()">Executar</button>
+        </form>
 
-        <table >
+        <table>
             <thead>
                 <tr>
                     <th>Nome</th>

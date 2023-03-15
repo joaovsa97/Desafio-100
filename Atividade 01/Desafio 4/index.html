@@ -10,11 +10,14 @@
 </head>
 <body>
     <div class="atv">
-        <label for="name">Produt Name:</label>
-        <input id="name" type="text" placeholder="Product Name">
-        <label for="price">Produt Price:</label>
-        <input id="price" type="number" step="0.01" placeholder="Product Price">
-        <button onclick="atividade04()">Submit</button>
+        <span>Crie uma variável que armazene uma string contendo o nome de um  produto e outra variável que armazene um número representando o  preço desse produto. Exiba na tela uma mensagem informando o nome  e o preço do produto.</span>
+        <form onsubmit="return false;">
+            <label for="name">Produt Name:</label>
+            <input id="name" type="text" placeholder="Product Name" required>
+            <label for="price">Produt Price:</label>
+            <input id="price" type="number" step="0.01" placeholder="Product Price" required>
+            <button onclick="atividade04()">Submit</button>
+        </form>
         <h3 id="resName"></h3>
     </div>
 </body>

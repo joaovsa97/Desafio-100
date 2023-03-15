@@ -5,12 +5,8 @@
     margin: 0;
 }
 
-h3{
-    margin-top: 60px;
-}
-
 body{
-    background-color: #e4f0fa;
+    background-color: rgb(252, 251, 220);
     height: 100vh;
     width: 100%;
 
@@ -30,6 +26,10 @@ body{
     width: 500px;
     padding: 20px;
     border-radius: 5px;
+}
+
+h3{
+    margin-top: 60px;
 }
 
 span{
@@ -58,7 +58,7 @@ label {
 
 button, #button {
     width: 100%;
-    background-color: rgb(228, 240, 250);
+    background-color: rgb(252, 251, 220);
     padding: 10px;
     font-size: 20px;
     border-radius: 4px;
@@ -68,15 +68,15 @@ button, #button {
     transition: 0.2s;
 }
 
-button:hover , #button:hover {
-    background-color: rgb(178, 205, 228);
+button:hover, #button:hover {
+    background-color: rgb(211, 210, 176);
     cursor: pointer;
 }
 
 table {
     width: 100%;
     text-align: center;
-    color:#2C2C73;
+    color:#8b5f35;
     font-weight: 700;
     font-size: 14px;
     margin-top: 20px;
