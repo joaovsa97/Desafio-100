@@ -46,3 +46,17 @@ const atividade04 = () => {
     }
     return res.innerText = obj
 }
+
+const atividade05 = () => {
+    const res = document.getElementById("res")
+
+    obj = []
+    i=1
+
+    do {
+        obj.push(i)
+        i++
+    } while(i <= 5)
+
+    res.innerText = obj
+}
