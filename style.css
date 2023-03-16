@@ -5,16 +5,8 @@
     margin: 0;
 }
 
-a{
-    text-decoration: none;
-    color: #000;
-    width: 100%;
-    text-align: center;
-}
-
 body{
     background-color: #f7df1e;
-    height: 100vh;
     width: 100%;
 
     display: flex;
@@ -31,6 +23,13 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    text-align: center;
 }
 
 .content{
