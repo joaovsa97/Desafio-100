@@ -60,3 +60,43 @@ const atividade05 = () => {
 
     res.innerText = obj
 }
+
+const atividade06 = () => {
+    const res = document.getElementById("res")
+
+    obj = []
+    i=0
+
+    do {
+        obj.push(i)
+        i++
+    } while(i <= 10)
+
+    return res.innerText = obj
+}
+
+const atividade07 = () => {
+    const res = document.getElementById("res")
+
+    obj = []
+    i=0
+
+    for(i=1; i <=10; i++){
+        obj.push(i * 7);
+    }
+
+    return res.innerText = obj
+}
+
+const atividade08 = () => {
+    const res = document.getElementById("res")
+
+    obj = [1]
+
+    for(i=0; i < 10; i++){
+        holder = j + i
+        
+    }
+
+    return res.innerText = obj
+}

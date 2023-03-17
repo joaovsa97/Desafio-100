@@ -23,13 +23,17 @@ const atividade04 = () => {
     const number = document.getElementById("intNum").value;
     const res = document.getElementById("res");
 
-    if(number > 10){
-        return res.innerText = "The number is higher than 10"
-    } else
-    if (number == 10){
-        return res.innerText = "The number is equal than 10"
+    if( typeof number != 'string' ){
+        if(number > 10){
+            return res.innerText = "The number is higher than 10"
+        } else
+        if (number == 10){
+            return res.innerText = "The number is equal than 10"
+        } else {
+            return res.innerText = "The number is lower than 10"
+        }
     } else {
-        return res.innerText = "The number is lower than 10"
+        return res.innerText = "Invalid input"
     }
 }
 
