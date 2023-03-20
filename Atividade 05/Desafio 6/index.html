@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <script src="../script.js"></script>
-    <title>IV - Desafio 9</title>
+    <title>V - Desafio 6</title>
 </head>
 <body>
     <div class="atv">
-        <span>Crie um loop while que solicite ao usuário um número e continue  solicitando até que o número digitado seja positivo.</span>
+        <span>Crie uma função que receba um array de strings como parâmetro e retorne um novo array com todas as strings em ordem alfabética.</span>
         <form onsubmit="return false;">
-            <label id="numLabel" for="num">Type a number.</label>
-            <input type="number" name="num" id="num" required>
-            <button onclick="atividade09()">Execute</button>
+            <label for="word">Type a word</label>
+            <input type="text" name="word" id="word">
+            <button onclick="atividade06()">Add word</button>
+            <button onclick="atv6exec()">Execute</button>
         </form>
         <h3 id="res"></h3>
     </div>

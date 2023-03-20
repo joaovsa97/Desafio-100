@@ -20,6 +20,8 @@ header {
     font-weight: 900;
     margin: 32px;
 
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;

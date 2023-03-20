@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+    <title>V - Desafio 10</title>
+</head>
+<body>
+    <div class="atv">
+        <span>Crie uma função que receba uma string como parâmetro e verifique se essa string é um palíndromo. A função deve retornar true ou false</span>
+        <button onclick="showTip()">Show tip</button>
+        <form onsubmit="return false;">
+            <label for="num1">Inpunt the first number</label>
+            <input type="number" name="num1" id="num1">
+            <label for="op">Inpunt the operation symbol</label>
+            <input type="text" name="op" id="op">
+            <label for="num2">Inpunt the second number</label>
+            <input type="number" name="num2" id="num2">
+            <button onclick="atividade10()">Verify</button>
+        </form>
+        <h3 id="res"></h3>
+    </div>
+    <div id="tip">
+        <p>Add = +</p>
+        <p>Subtract = -</p>
+        <p>Multiply = *</p>
+        <p>Divide = /</p>
+        <p>Division Remainder = %</p>
+    </div>
+
+    <script>
+        function showTip() {
+            visibilty = document.getElementById("tip")
+
+            if(visibilty.style.display != 'block'){
+                visibilty.style.display = 'block'
+            } else {
+                visibilty.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
